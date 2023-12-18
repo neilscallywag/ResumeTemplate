@@ -1,0 +1,215 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+%\usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+ \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+\begin{center}
+    \textbf{\Huge \scshape Neil Sharma} \\ \vspace{1pt}
+    \small +65 88940197 $|$ \href{mailto:neil.sharma.2022@scis.smu.edu.sg}{\underline{neil.sharma.2022@scis.smu.edu.sg}} $|$ 
+    \href{https://linkedin.com/in/neil-sharma-sg}{\underline{Linkedin}} $|$
+   \href{https://github.com/neilscallywag}{\underline{GitHub}} $|$
+\href{https://stackoverflow.com/users/16589387/neil}{\underline{Stack Overflow}}
+\end{center}
+
+%\section{Description}
+%{Highly motivated and enthusiastic individual with a strong passion for software engineering and cybersecurity with dedi}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Singapore Management University}{Singapore}
+      {Bachelor of Science in Software Engineering, Second Major in Cybersecurity}{Aug. 2022 -- Present}
+ \resumeItemListStart
+        \resumeItem{Magna Cum Laude}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Millennia Institute}{Singapore}
+      {GCE A-Levels}{Jan. 2017 -- Dec 2019}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Trinax SG}{Singapore }
+      {Quality Assurance Engineer Intern}{August 2023 -- Present}
+      \resumeItemListStart
+        \resumeItem{Conducted Alpha, Beta and UAT for the projects (Google (Interland - Safer with Google) , CSA (Phishing-Wars) and Singtel (Scam Smash)) hosted during Digital For Life festival 2023. }
+        \resumeItem{Worked on games featured at Estée Lauder's Beauty Sleep 2023 Event.}
+        \resumeItem{Worked on Sephora's 50th Anniversary promotional game (Ace the Race).}
+        \resumeItem{Conducted in-depth UAT sessions with key clients, collecting and providing valuable feedback and ensuring all critical acceptance criteria were met.}
+        \resumeItem{Utilized tracking and testing tools, such as ClickUp and BrowserStack and Selenium, to efficiently detect, catalog, and conduct functional regression testing , leading to a 25\% increase in defect closure rates.}
+
+      %  \resumeItem{Actively participated in agile development processes, aligning QA efforts with development goals through regular sprint planning, retrospectives, and Bi-Weekly stand-ups.}
+      \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Singapore Management University}{Singapore }
+      {Undergraduate Research - Summer 23 Generative AI Intern}{June 2023 -- August 2023}
+      \resumeItemListStart
+        \resumeItem{Build a new dataset of faulty codes along with test cases with data from various sources.}
+        \resumeItem{Localize and explain the faults in the previous study dataset on real-life incorrect Python program assignments.}
+        \resumeItem{Experiment with various prompts to improve the fault localization and explanation from ChatGPT.}
+        \resumeItem{Run fault localization through ChatGPT on several datasets.}
+        \resumeItem{Help with the evaluation of generated explanation and fault localization.}
+      \resumeItemListEnd
+
+
+
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+
+%-----------Extra Curriculars-----------
+
+\section{Extra Curriculars}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{The Mentoring Circle} $|$ \emph{Singapore Management University}}{September 2023 -- Present}
+      %    \resumeItemListStart
+   %         \resumeItem{Built mock frontend using Typescript, React and ChakraUI to simulate login and registeration process}
+%	    \resumeItem{Deployed the microservices in Docker containers using Make}         
+% \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Communications Coach} $|$ \emph{Singapore Management University}}{January 2023 -- June 2023}
+              \resumeItemListStart
+            \resumeItem{Responsible for helping undergraduate students with their content, logical reasoning and argumentation for various writing modules.}
+            \resumeItem{Coached over 40 students over the course of a semester.}
+          \resumeItemListEnd
+\resumeProjectHeading
+          {\textbf{SMU Debate Society}$|$ \emph{Singapore Management University}} {August 2022 -- August 2023}%$|$ \emph{PHP, MySQL}}{Dec 2022 -- Jan 2023}
+          \resumeItemListStart
+           \resumeItem{Stepped out of my comfort zone to be able to think critically on the spot and formulate coherent arguments. }
+          \resumeItemListEnd
+        
+\resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: PHP, Python, Javascript, SQL (MySQL)} \\
+     \textbf{Frameworks}{: React, ChakraUI, Bootstrap 5, Pytest, PlayWright } \\
+     \textbf{Developer Tools}{: Git, Docker, Make, Postman, Burpsuite, BrowserStack, ClickUp, Slack} \\
+     %Libraries
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
