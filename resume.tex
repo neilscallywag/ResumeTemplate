@@ -54,6 +54,15 @@
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
+% Underline URL
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
@@ -101,15 +110,15 @@
 
 
 \begin{center}
-    \textbf{\Huge \scshape Neil Sharma} \\ \vspace{1pt}
+    \textbf{\Huge \scshape Neil Sharma} \\
     \small +65 88940197 $|$ \href{mailto:neil.sharma.2022@scis.smu.edu.sg}{\underline{neil.sharma.2022@scis.smu.edu.sg}} $|$ 
     \href{https://linkedin.com/in/neil-sharma-sg}{\underline{Linkedin}} $|$
    \href{https://github.com/neilscallywag}{\underline{GitHub}} $|$
 \href{https://stackoverflow.com/users/16589387/neil}{\underline{Stack Overflow}}
-\end{center}
+ \vspace{1pt}
 
-%\section{Description}
-%{Highly motivated and enthusiastic individual with a strong passion for software engineering and cybersecurity with dedi}
+\small{Availability : May 2024 - August 2024  |   Citizenship: Singaporean}
+\end{center}
 
 
 %-----------EDUCATION-----------
@@ -119,26 +128,24 @@
       {Singapore Management University}{Singapore}
       {Bachelor of Science in Software Engineering, Second Major in Cybersecurity}{Aug. 2022 -- Present}
  \resumeItemListStart
-        \resumeItem{Magna Cum Laude}
+        \resumeItem{cGPA: 3.61/4.0 (Magna Cum Laude)}
+        \resumeItem{VMWare Tanzu Award for Enterprise Solution Management (2024)}
+        \resumeItem{VMWare Tanzu Award for Enterprise Solution Development (2024)}
+       % \resumeItem{Open House Software Engineering representative Year 2023 and 2024}
+        % \resumeItem{Relevant Coursework: IT Solutions Architecture, Web Application Development, Operating Systems and Networking}
       \resumeItemListEnd
-    \resumeSubheading
-      {Millennia Institute}{Singapore}
-      {GCE A-Levels}{Jan. 2017 -- Dec 2019}
   \resumeSubHeadingListEnd
 
 
 %-----------EXPERIENCE-----------
-\section{Experience}
+\section{Professional Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
       {Trinax SG}{Singapore }
       {Quality Assurance Engineer Intern}{August 2023 -- Present}
       \resumeItemListStart
-        \resumeItem{Conducted Alpha, Beta and UAT for the projects (Google (Interland - Safer with Google) , CSA (Phishing-Wars) and Singtel (Scam Smash)) hosted during Digital For Life festival 2023. }
-        \resumeItem{Worked on games featured at Estée Lauder's Beauty Sleep 2023 Event.}
-        \resumeItem{Worked on Sephora's 50th Anniversary promotional game (Ace the Race).}
-        \resumeItem{Conducted in-depth UAT sessions with key clients, collecting and providing valuable feedback and ensuring all critical acceptance criteria were met.}
+        \resumeItem{Conducted Alpha, Beta, and UAT for the projects (Google (Interland - Safer with Google), CSA (Phishing-Wars), and Singtel (Scam Smash)) hosted during Digital For Life festival 2023 in order to ensure their functionality, user-friendliness, and ultimately delivering high-quality experiences for festival attendees. }
         \resumeItem{Utilized tracking and testing tools, such as ClickUp and BrowserStack and Selenium, to efficiently detect, catalog, and conduct functional regression testing , leading to a 25\% increase in defect closure rates.}
 
       %  \resumeItem{Actively participated in agile development processes, aligning QA efforts with development goals through regular sprint planning, retrospectives, and Bi-Weekly stand-ups.}
@@ -147,14 +154,14 @@
 
     \resumeSubheading
       {Singapore Management University}{Singapore }
-      {Undergraduate Research - Summer 23 Generative AI Intern}{June 2023 -- August 2023}
+      {Undergraduate Research on Generative AI }{June 2023 -- August 2023}
       \resumeItemListStart
-        \resumeItem{Build a new dataset of faulty codes along with test cases with data from various sources.}
-        \resumeItem{Localize and explain the faults in the previous study dataset on real-life incorrect Python program assignments.}
-        \resumeItem{Experiment with various prompts to improve the fault localization and explanation from ChatGPT.}
-        \resumeItem{Run fault localization through ChatGPT on several datasets.}
-        \resumeItem{Help with the evaluation of generated explanation and fault localization.}
+	\resumeItem{Attached under Professor David Lo as part of the Undergraduate Research in Computing Programme.}
+        \resumeItem{Compiled and analyzed diverse faulty code datasets, including real-life Python assignments, to refine AI model training for ChatGPT, focusing on fault localisation and error reduction.}
+    \resumeItem{{Co-authored the research paper} \href{https://doi.org/10.48550/arXiv.2403.10507}{\underline{"Demystifying Faulty Code: Step-by-Step Reasoning for Explainable Fault Localization"}} presented at the SANER 2024 conference.}
+%https://conf.researchr.org/details/saner-2024/saner-2024-papers/68/Demystifying-Faulty-Code-Step-by-Step-Reasoning-for-Explainable-Fault-Localization
       \resumeItemListEnd
+
 
 
 
@@ -170,14 +177,31 @@
 %-------------------------------------------
 
   \resumeSubHeadingListEnd
+\section{School Projects}
+    \resumeSubHeadingListStart
+ \resumeProjectHeading
+          {\textbf{EduHelper }}{February 2024 -- April 2024}
+	  \resumeItemListStart
+            \resumeItem{An AI-powered educational platform that generates MCQs and Anki Flashcards given a PDF file. Employed Amazon S3, Docker, Nginx, Ngrok, gRPC, Singpass API, and Kong API Gateway with a focus on microservices architecture and cloud-agnostic containerization.}
+          \resumeItemListEnd
+ %\resumeProjectHeading
+    %      {\textbf{Ascenda Loyalty Admin Panel}}{February 2024 -- April 2024}
+	%  \resumeItemListStart
+           % \resumeItem{Designed and implemented the Ascenda Admin Panel for managing user accounts and loyalty points, facilitating real-time log tracking and querying. Utilized a tech stack comprising Terraform, Docker, AWS CloudFront, WAF, RDS, ElasticSearch, Route 53, S3, ECS Fargate, ECR, gRPC, Fluentd, and GitHub Actions within a CI/CD pipeline.}
+         % \resumeItemListEnd
+   
+\resumeSubHeadingListEnd
 
 
 %-----------Extra Curriculars-----------
 
-\section{Extra Curriculars}
+\section{Co-curricular Activities}
     \resumeSubHeadingListStart
       \resumeProjectHeading
           {\textbf{The Mentoring Circle} $|$ \emph{Singapore Management University}}{September 2023 -- Present}
+	  \resumeItemListStart
+            \resumeItem{Attaining professional career guidance and mentorship from industry seniors as a mentee.}
+          \resumeItemListEnd
       %    \resumeItemListStart
    %         \resumeItem{Built mock frontend using Typescript, React and ChakraUI to simulate login and registeration process}
 %	    \resumeItem{Deployed the microservices in Docker containers using Make}         
@@ -185,17 +209,29 @@
       \resumeProjectHeading
           {\textbf{Communications Coach} $|$ \emph{Singapore Management University}}{January 2023 -- June 2023}
               \resumeItemListStart
-            \resumeItem{Responsible for helping undergraduate students with their content, logical reasoning and argumentation for various writing modules.}
-            \resumeItem{Coached over 40 students over the course of a semester.}
+            \resumeItem{Coached over 40 undergraduate students throughout a semester, helping them with content, logical reasoning, and argumentation in writing modules.}
           \resumeItemListEnd
-\resumeProjectHeading
-          {\textbf{SMU Debate Society}$|$ \emph{Singapore Management University}} {August 2022 -- August 2023}%$|$ \emph{PHP, MySQL}}{Dec 2022 -- Jan 2023}
-          \resumeItemListStart
-           \resumeItem{Stepped out of my comfort zone to be able to think critically on the spot and formulate coherent arguments. }
-          \resumeItemListEnd
+%\resumeProjectHeading
+   %       {\textbf{SMU Debate Society} $|$ \emph{Singapore Management University}} {August 2022 -- August 2023}%$|$ \emph{PHP, MySQL}}{Dec 2022 -- Jan 2023}
+      %    \resumeItemListStart
+         %  \resumeItem{Honed my ability to think critically on the spot and master the craft of formulating coherent arguments. }
+          %\resumeItemListEnd
         
 \resumeSubHeadingListEnd
 
+
+%
+%-----------Certifications -----------
+\section{Certifications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{AWS Certified Solutions Architect}  $|$ \emph{AWS} \emph{(2024)} \\
+     \textbf{Data Analytics for managers} $|$ \emph{National University Of Singapore} \emph{(2022)} \\
+     \textbf{User-Centric Interface Design for Mobile Devices}  $|$ \emph{Temasek Polytechnic} \emph{(2022)} \\
+     \textbf{Visual logic in User Interface Design}  $|$ \emph{Temasek Polytechnic} \emph{(2022)} \\
+     %Libraries
+    }}
+ \end{itemize}
 
 
 %
@@ -203,9 +239,10 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: PHP, Python, Javascript, SQL (MySQL)} \\
-     \textbf{Frameworks}{: React, ChakraUI, Bootstrap 5, Pytest, PlayWright } \\
-     \textbf{Developer Tools}{: Git, Docker, Make, Postman, Burpsuite, BrowserStack, ClickUp, Slack} \\
+     \textbf{Languages}{: Java, PHP, Python, Javascript, SQL} \\
+     \textbf{Frameworks}{: React, ChakraUI, Bootstrap 5 } \\
+     \textbf{Developer Tools}{: Git, Docker, Make, Postman, Burpsuite, BrowserStack, AWS, Figma } \\
+     \textbf{Solution Management Tools}{: Jira, Clickup, Slack} \\
      %Libraries
     }}
  \end{itemize}
