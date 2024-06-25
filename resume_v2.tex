@@ -1,0 +1,268 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+%\usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+ \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% Underline URL
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+\begin{center}
+    \textbf{\Huge \scshape Neil Sharma} \\
+    \small +65 88940197 $|$ \href{mailto:neil.sharma.2022@scis.smu.edu.sg}{\underline{neil.sharma.2022@scis.smu.edu.sg}} $|$ 
+    \href{https://linkedin.com/in/neil-sharma-sg}{\underline{Linkedin}} $|$
+   \href{https://github.com/neilscallywag}{\underline{GitHub}} $|$
+\href{https://stackoverflow.com/users/16589387/neil}{\underline{Stack Overflow}}
+ \vspace{1pt}
+
+\small{Citizenship: Singaporean}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Singapore Management University}{Singapore}
+      {Bachelor of Science in Software Engineering, Second Major in Cybersecurity}{Aug. 2022 -- Present}
+ \resumeItemListStart
+        \resumeItem{CGPA: 3.69/4.0 (Magna Cum Laude)}
+        \resumeItem{VMWare Tanzu Award for Enterprise Solution Management (2024)}
+        \resumeItem{VMWare Tanzu Award for Enterprise Solution Development (2024)}
+       % \resumeItem{Open House Software Engineering representative Year 2023 and 2024}
+        % \resumeItem{Relevant Coursework: IT Solutions Architecture, Web Application Development, Operating Systems and Networking}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {Mavericks Consulting}{Singapore }
+      {Software Engineer Intern}{May 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Implemented and managed Infrastructure as Code (IaC) using Terraform, integrating it with Slack notifications, resulting in a 50\% reduction in deployment time and mitigating keyman risk through automated deployments.}
+        \resumeItem{Utilized multi-stage builds for Docker, identifying and eliminating unnecessary code and dependencies, reducing Docker image size by 60\% and cutting ECR costs by 45\%.}
+	% \resumeItem{Successfully migrated an internal application from ECS EC2 to a serverless architecture, achieving a 40\% reduction in operational costs and improving application scalability and performance.}
+ \resumeItem{Led a cross-functional team as Scrum Master of 8, facilitating agile ceremonies, sprint planning, and retrospectives, boosting story point delivery by 30\%. }
+      \resumeItemListEnd
+    \resumeSubheading
+      {Trinax SG}{Singapore }
+      {Quality Assurance Engineer Intern}{August 2023 -- April 2024}
+      \resumeItemListStart
+        \resumeItem{Orchestrated comprehensive Alpha, Beta, and UAT phases for high-profile projects during Digital for Life Festival 2023, guaranteeing exceptional functionality and a 20\% increase in attendee satisfaction, relative to previous years, through rigorous user-centric testing.}
+        \resumeItem{Utilized tracking and testing tools, such as ClickUp and BrowserStack and Selenium, to efficiently detect, catalog, and conduct functional regression testing , leading to a 25\% increase in defect closure rates.}
+
+      %  \resumeItem{Actively participated in agile development processes, aligning QA efforts with development goals through regular sprint planning, retrospectives, and Bi-Weekly stand-ups.}
+      \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Singapore Management University}{Singapore }
+      {Undergraduate Research on Generative AI }{June 2023 -- August 2023}
+      \resumeItemListStart
+	\resumeItem{Analyzed and explained diverse faulty code datasets as part of Professor David Lo's team to refine AI model training for ChatGPT, focusing on fault localization and error reduction.}
+    \resumeItem{{Co-authored the research paper} \href{https://doi.org/10.48550/arXiv.2403.10507}{\underline{"Demystifying Faulty Code: Step-by-Step Reasoning for Explainable Fault Localization"}} presented at the SANER 2024 conference.}
+%https://conf.researchr.org/details/saner-2024/saner-2024-papers/68/Demystifying-Faulty-Code-Step-by-Step-Reasoning-for-Explainable-Fault-Localization
+      \resumeItemListEnd
+
+
+
+
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+\section{Projects \& Open Source Contributions}
+    \resumeSubHeadingListStart
+ \resumeProjectHeading
+          {\textbf{EduHelper }}{February 2024 -- April 2024}
+	  \resumeItemListStart
+            \resumeItem{An AI-powered educational platform that generates MCQs and Flashcards given a PDF file. Employed Amazon S3, Docker, Nginx, Ngrok, gRPC, Singpass, Google API, and Kong API Gateway with a focus on microservices architecture.}
+          \resumeItemListEnd
+           \resumeProjectHeading
+          {\textbf{Runatlantis/Atlantis }}{May 2024 -- May 2024}
+	  \resumeItemListStart
+            \resumeItem{Contributed to the Atlantis (terraform pull request automation tool) repository by updating the configuration example for Slack hooks, improving the clarity and usability of slack notifications.}
+          \resumeItemListEnd
+   
+
+%   \resumeSubHeadingListEnd
+% \section{Open Source Contributions}
+%     \resumeSubHeadingListStart
+%  \resumeProjectHeading
+%           {\textbf{Runatlantis/Atlantis }}{May 2024 -- May 2024}
+% 	  \resumeItemListStart
+%             \resumeItem{Contributed to the Atlantis repository by updating the configuration example for Slack hooks, improving the clarity and usability of slack notifications.}
+%           \resumeItemListEnd
+   
+% \resumeSubHeadingListEnd
+
+
+
+%-----------Extra Curriculars-----------
+
+  \resumeSubHeadingListEnd
+\section{Co-Curricular Activities}
+    \resumeSubHeadingListStart
+   %    \resumeProjectHeading
+   %        {\textbf{The Mentoring Circle} $|$ \emph{Singapore Management University}}{September 2023 -- Present}
+	  % \resumeItemListStart
+          %   \resumeItem{Attaining professional career guidance and mentorship from industry seniors as a mentee.}
+          % \resumeItemListEnd
+      %    \resumeItemListStart
+   %         \resumeItem{Built mock frontend using Typescript, React and ChakraUI to simulate login and registeration process}
+%	    \resumeItem{Deployed the microservices in Docker containers using Make}         
+% \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Communications Coach} $|$ \emph{Singapore Management University}}{January 2023 -- June 2023}
+              \resumeItemListStart
+            \resumeItem{Coached over 40 undergraduate students, helping them with content, logical reasoning, and argumentation for modules.}
+          \resumeItemListEnd
+%\resumeProjectHeading
+   %       {\textbf{SMU Debate Society} $|$ \emph{Singapore Management University}} {August 2022 -- August 2023}%$|$ \emph{PHP, MySQL}}{Dec 2022 -- Jan 2023}
+      %    \resumeItemListStart
+         %  \resumeItem{Honed my ability to think critically on the spot and master the craft of formulating coherent arguments. }
+          %\resumeItemListEnd
+        
+\resumeSubHeadingListEnd
+
+
+%
+%-----------Certifications -----------
+\section{Certifications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{AWS Certified Solutions Architect Associate}  $|$ \emph{AWS} \emph{(2024)} \\
+     \textbf{Data Analytics for Managers} $|$ \emph{National University Of Singapore} \emph{(2022)} \\
+     \textbf{User-Centric Interface Design for Mobile Devices}  $|$ \emph{Temasek Polytechnic} \emph{(2022)} \\
+     \textbf{Visual logic in User Interface Design}  $|$ \emph{Temasek Polytechnic} \emph{(2022)} \\
+     %Libraries
+    }}
+ \end{itemize}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, PHP, Python, Javascript, SQL} \\
+     %Libraries
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
